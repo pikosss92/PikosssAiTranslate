@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "PikosssAITraduction",
+  "version": "0.1",
+  "permissions": ["activeTab", "contextMenus", "scripting", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "PeregrineAILogo.png",
+    "48": "PeregrineAILogo.png",
+    "128": "PeregrineAILogo.png"
+  }
+}
